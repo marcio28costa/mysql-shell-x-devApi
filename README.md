@@ -382,11 +382,17 @@ EXPLAIN SELECT * FROM pedidos WHERE dados->>'$.status' = 'aprovado'\G
 Alternativa mais direta sem criar a coluna explicitamente:
 
 ```sql
-CREATE INDEX idx_cidade
-  ON pedidos ((dados->>'$.entrega.endereco.cidade'));
+-- Adiciona a coluna virtual
+ALTER TABLE pedidos
+  ADD COLUMN cidade_entrega VARCHAR(100)
+    GENERATED ALWAYS AS (dados->>'$.entrega.endereco.cidade') VIRTUAL;
 
+-- Cria o índice na coluna virtual
+CREATE INDEX idx_cidade ON pedidos (cidade_entrega);
+
+-- Verifica o uso do índice
 EXPLAIN SELECT id FROM pedidos
-WHERE dados->>'$.entrega.endereco.cidade' = 'São Paulo'\G
+WHERE cidade_entrega = 'São Paulo'\G
 ```
 
 ### 3.3 Índice em coleção via X DevAPI
