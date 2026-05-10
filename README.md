@@ -1,9 +1,9 @@
 # MySQL Shell: JSON, Document Store e X DevAPI na Prática
 
 **Público:** DBAs e profissionais com experiência em MySQL  
-**Versão de referência:** MySQL 8.0+ / MySQL Shell 8.0+
-**Autor:** Marcio Costa
-**Ambiente de simulação:** VM Oracle linux 8.10 - MySQL 8.4.8
+**Versão de referência:** MySQL 8.0+ / MySQL Shell 8.0+  
+**Autor:** Marcio Costa  
+**Ambiente de simulação:** VM Oracle linux 8.10 - MySQL 8.4.8  
 
 ---
 
