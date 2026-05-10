@@ -103,7 +103,7 @@ INSERT INTO pedidos (cliente_id, dados) VALUES
   "status": "pendente",
   "total": 1200.00,
   "itens": [
-    {"sku": "C099", "nome": "Monitor 27\"", "qty": 1, "preco": 1200.00}
+    {"sku": "C099", "nome": "Monitor 27 polegadas", "qty": 1, "preco": 1200.00}
   ],
   "entrega": {
     "tipo": "normal",
