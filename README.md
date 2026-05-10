@@ -2,6 +2,8 @@
 
 **Público:** DBAs e profissionais com experiência em MySQL  
 **Versão de referência:** MySQL 8.0+ / MySQL Shell 8.0+
+**Autor:** Marcio Costa
+**Ambiente de simulação:** VM Oracle linux 8.10 - MySQL 8.4.8
 
 ---
 
@@ -9,7 +11,7 @@
 
 O MySQL Shell (`mysqlsh`) vai muito além de um simples cliente de linha de comando. Ele é o ponto de entrada para uma série de funcionalidades modernas do MySQL: suporte nativo a JSON como tipo de dado de primeira classe, uma API NoSQL completa via X DevAPI, e o Document Store — que permite trabalhar com coleções de documentos sem abrir mão da robustez de um banco relacional.
 
-Neste artigo você vai colocar a mão na massa em três frentes:
+Neste laboratorio você vai colocar a mão na massa em três frentes:
 
 1. **JSON no SQL** — colunas `JSON`, funções de extração e manipulação, índices funcionais
 2. **X DevAPI e Document Store** — CRUD com coleções, sem SQL
